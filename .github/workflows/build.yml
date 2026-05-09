@@ -21,7 +21,7 @@ jobs:
 
       - name: Build Debug APK
         run: |
-          gradle wrapper
+          gradle wrapper --gradle-version 8.0
           ./gradlew assembleDebug
 
       - name: Upload APK
