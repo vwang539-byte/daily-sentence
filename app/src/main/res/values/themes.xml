@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.DailySentence" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#C8A96E</item>
+        <item name="colorPrimaryDark">#A88A4E</item>
+        <item name="colorAccent">#C8A96E</item>
+        <item name="android:windowBackground">#FAFAF8</item>
+        <item name="android:statusBarColor">#FAFAF8</item>
+        <item name="android:navigationBarColor">#FAFAF8</item>
+    </style>
+</resources>

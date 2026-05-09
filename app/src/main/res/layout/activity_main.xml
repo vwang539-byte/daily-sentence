@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAF8"
+    android:padding="32dp">
+
+    <!-- Top date label -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#AAAAAA"
+        android:letterSpacing="0.08"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Day number -->
+    <TextView
+        android:id="@+id/tvDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#C8A96E"
+        android:textStyle="bold"
+        android:letterSpacing="0.12"
+        app:layout_constraintTop_toBottomOf="@id/tvDate"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="48dp" />
+
+    <!-- Divider line -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="40dp"
+        android:layout_height="2dp"
+        android:background="#C8A96E"
+        app:layout_constraintTop_toBottomOf="@id/tvDay"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- Sentence text - centered vertically -->
+    <TextView
+        android:id="@+id/tvSentence"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:textColor="#1A1A1A"
+        android:lineSpacingMultiplier="1.5"
+        android:fontFamily="serif"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="60dp" />
+
+    <!-- Bottom label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today's Sentence"
+        android:textSize="12sp"
+        android:textColor="#CCCCCC"
+        android:letterSpacing="0.15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="32dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
